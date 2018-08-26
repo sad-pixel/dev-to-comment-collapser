@@ -1,4 +1,5 @@
 function runScript() {
+  console.log("Running on this page!");
   // Inject the button into every comment's header
   $(".details").append("<button class='collapser'>Collapse</button>");
 
@@ -10,6 +11,7 @@ function runScript() {
   });
 
   $(".collapser").click(function(e) {
+    console.log("Toggled!");
     // First, collapse the parent comment's body and actions, leaving the header
     $(this)
       .parent()
