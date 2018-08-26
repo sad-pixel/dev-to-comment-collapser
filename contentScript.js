@@ -5,8 +5,8 @@ function runScript() {
 
   // Also, re-add whenever a link is clicked
   // this is because dev.to uses AJAX loading and I can't figure out a simple solution
-  // to the problem
-  $("a").click(function(e) {
+  // to the problem as popstate only fires on history.back()
+  $("a, h3").click(function(e) {
     runScript();
   });
 
