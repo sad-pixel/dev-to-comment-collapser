@@ -1,0 +1,6 @@
+button.collapser {
+  border: none;
+  position: absolute;
+  top: calc(2.75vw);
+  margin-left: 10px;
+}
