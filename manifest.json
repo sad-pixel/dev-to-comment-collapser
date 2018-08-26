@@ -1,0 +1,13 @@
+{
+  "name": "Dev.to Comments Collapser",
+  "version": "0.1",
+  "author": "Ishan Das Sharma",
+  "description": "Enables reddit-style comment collapsing on dev.to",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://dev.to/*"],
+      "js": ["jquery-3.3.1.min.js", "contentScript.js"]
+    }
+  ]
+}
